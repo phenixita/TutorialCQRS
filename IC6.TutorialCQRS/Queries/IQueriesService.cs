@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace IC6.TutorialCQRS.Queries
 {
-    public interface IValueQueriesService
+    public interface IQueriesService
     {
         Task<IEnumerable<int>> GetAllPostId();
     }

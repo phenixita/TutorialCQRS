@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace IC6.TutorialCQRS.Commands
 {
-    public interface IValueCommandService
+    public interface ICommandService
     {
         Task<Post> SavePost(string title, string body);
     }

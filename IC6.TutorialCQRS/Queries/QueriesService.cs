@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace IC6.TutorialCQRS.Queries
 {
-    public class ValueQueriesService : IValueQueriesService
+    public class QueriesService : IQueriesService
     {
         private readonly string _connectionString;
 
-        public ValueQueriesService(string connectionString)
+        public QueriesService(string connectionString)
         {
             if (string.IsNullOrEmpty(connectionString))
             {

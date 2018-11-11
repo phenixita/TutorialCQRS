@@ -20,7 +20,7 @@ namespace IC6.TutorialCQRS.Tests
             Post post;
             using (var context = new BlogContext(options))
             {
-                var commands = new ValueCommandService(context);
+                var commands = new CommandService(context);
 
                 //act
                 post = await commands.SavePost("Title", "Body");

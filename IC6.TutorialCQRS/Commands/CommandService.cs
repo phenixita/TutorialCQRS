@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace IC6.TutorialCQRS.Commands
 {
-    public class ValueCommandService : IValueCommandService
+    public class CommandService : ICommandService
     {
         private readonly BlogContext _context;
 
-        public ValueCommandService(BlogContext context)
+        public CommandService(BlogContext context)
         {
             _context = context ?? throw new ArgumentNullException(nameof(context));
         }

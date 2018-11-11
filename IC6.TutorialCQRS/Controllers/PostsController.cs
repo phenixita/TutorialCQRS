@@ -10,12 +10,12 @@ namespace IC6.TutorialCQRS.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ValuesController : ControllerBase
+    public class PostsController : ControllerBase
     {
-        private readonly IValueQueriesService _queries;
-        private readonly IValueCommandService _commands;
+        private readonly IQueriesService _queries;
+        private readonly ICommandService _commands;
 
-        public ValuesController(IValueQueriesService queries, IValueCommandService commands)
+        public PostsController(IQueriesService queries, ICommandService commands)
         {
             _queries = queries ?? throw new ArgumentNullException(nameof(queries));
             _commands = commands ?? throw new ArgumentNullException(nameof(commands));

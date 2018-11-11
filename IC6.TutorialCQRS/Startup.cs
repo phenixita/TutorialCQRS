@@ -32,8 +32,8 @@ namespace IC6.TutorialCQRS
         {
 
 
-            services.AddScoped<IValueQueriesService, ValueQueriesService>(ctor => new ValueQueriesService(Configuration["ConnectionString"]));
-            services.AddScoped<IValueCommandService, ValueCommandService>();
+            services.AddScoped<IQueriesService, QueriesService>(ctor => new QueriesService(Configuration["ConnectionString"]));
+            services.AddScoped<ICommandService, CommandService>();
 
             services.AddDbContext<BlogContext>(optionsAction: optionsBuilder =>
                 optionsBuilder.UseSqlServer(Configuration["ConnectionString"],
