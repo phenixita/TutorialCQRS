@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2046
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IC6.TutorialCQRS", "IC6.TutorialCQRS\IC6.TutorialCQRS.csproj", "{ADAD07FD-1FE8-45DA-804A-2D44ED81B703}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IC6.TutorialCQRS.Tests", "IC6.TutorialCQRS.Tests\IC6.TutorialCQRS.Tests.csproj", "{05143CAC-1005-4F3B-95E4-F74B0855A03F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ADAD07FD-1FE8-45DA-804A-2D44ED81B703}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADAD07FD-1FE8-45DA-804A-2D44ED81B703}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADAD07FD-1FE8-45DA-804A-2D44ED81B703}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADAD07FD-1FE8-45DA-804A-2D44ED81B703}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05143CAC-1005-4F3B-95E4-F74B0855A03F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05143CAC-1005-4F3B-95E4-F74B0855A03F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05143CAC-1005-4F3B-95E4-F74B0855A03F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05143CAC-1005-4F3B-95E4-F74B0855A03F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FEB84301-00BD-4917-BFBE-0F6B61488573}
+	EndGlobalSection
+EndGlobal
