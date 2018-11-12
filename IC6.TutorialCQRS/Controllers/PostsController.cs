@@ -28,12 +28,7 @@ namespace IC6.TutorialCQRS.Controllers
             return (await _queries.GetAllPostId()).ToList();
         }
 
-        // GET api/values/5
-        [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
-        {
-            return "value";
-        }
+       
 
         // POST api/values
         [HttpPost]
@@ -41,17 +36,6 @@ namespace IC6.TutorialCQRS.Controllers
         {
             _commands.SavePost(value.Title, value.Body);
         }
-
-        // PUT api/values/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE api/values/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
+         
     }
 }
