@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 version: 0.2
 
 phases:
@@ -14,4 +15,22 @@ phases:
 artifacts:
   files:
     - sampletest/**/*
+=======
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+       dotnet: 3.1
+  build:
+    commands:
+      - echo Build Started on 'date'
+      - dotnet publish -c release -o .\sampletest IC6.TutorialCQRS\IC6.TutorialCQRS.csproj
+    commands:
+      - echo Start Unit test
+      - dotnet test 'IC6.TutorialCQRS.Tests\IC6.TutorialCQRS.Tests.csproj'
+artifacts:
+  files:
+    - sampletest/**/*
+>>>>>>> 02e76fa4f2b5a401cc29cf181f41e5fcaffe5f09
     - aws-windows-deployment.json
